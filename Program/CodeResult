@@ -1,0 +1,406 @@
+Resultado de código
+
+df_base_pivot_oot.info() after converting to datetime:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 112549 entries, 0 to 112548
+Data columns (total 4 columns):
+ #   Column                      Non-Null Count   Dtype         
+---  ------                      --------------   -----         
+ 0   nit_enmascarado             112549 non-null  int64         
+ 1   num_oblig_orig_enmascarado  112549 non-null  int64         
+ 2   num_oblig_enmascarado       112549 non-null  int64         
+ 3   fecha_var_rpta_alt          112549 non-null  datetime64[ns]
+dtypes: datetime64[ns](1), int64(3)
+memory usage: 3.4 MB
+None
+
+Shape of df_base_pivot_trtest: (199999, 49)
+
+Shape of df_probabilidad_oblig: (199999, 7)
+
+Shape of df_master_customer: (199816, 38)
+
+Shape of df_maestra_cuotas_pagos: (182999, 11)
+
+Shape of df_base_pivot_oot: (112549, 4)
+
+Percentage of missing values in df_base_pivot_trtest:
+|                | 0     |
+|:---------------|:------|
+| vlr_obligacion | 0.12  |
+| cant_gestiones | 3.10  |
+| rpc            | 0.00  |
+| cant_acuerdo   | 3.12  |
+| porc_pago_mes  | 53.66 |
+
+Percentage of missing values in df_probabilidad_oblig:
+| 0   |
+|-----|
+
+Percentage of missing values in df_master_customer:
+|                                                               | 0     |
+|:--------------------------------------------------------------|:------|
+| FABRICACIÓN DE REMOLQUES Y SEMIRREMOLQUES,1160000.0,2023,8,31 | 99.83 |
+| smmlv                                                         | 0.08  |
+| year                                                          | 0.14  |
+| month                                                         | 0.16  |
+| ingestion_day                                                 | 0.17  |
+
+Percentage of missing values in df_maestra_cuotas_pagos:
+|           | 0    |
+|:----------|:-----|
+| porc_pago | 1.59 |
+
+Percentage of missing values in df_base_pivot_oot:
+| 0   |
+|-----|
+
+Unique values and most frequent values for categorical columns in df_base_pivot_trtest:
+
+Column: tipo_var_rpta_alt
+Number of unique values: 5
+Most frequent value: e_cero_tipo_2
+
+Column: banca
+Number of unique values: 3
+Most frequent value: Banca Personas
+
+Column: segmento
+Number of unique values: 6
+Most frequent value: Personal
+
+Column: producto
+Number of unique values: 23
+Most frequent value: TARJETA DE CREDITO
+
+Column: producto_cons
+Number of unique values: 20
+Most frequent value: Tarjeta de Credito
+
+Column: aplicativo
+Number of unique values: 7
+Most frequent value: L
+
+Column: rango_mora
+Number of unique values: 2
+Most frequent value: a.1-30
+
+Column: desc_alternativa1
+Number of unique values: 28
+Most frequent value: Reestructuración novacion
+
+Column: desc_alternativa2
+Number of unique values: 12
+Most frequent value: Sin alivio
+
+Column: desc_alternativa3
+Number of unique values: 6
+Most frequent value: Sin alivio
+
+Column: alter_posible1_2
+Number of unique values: 36
+Most frequent value: CON22
+
+Column: alter_posible2_2
+Number of unique values: 13
+Most frequent value: None
+
+Column: alter_posible3_2
+Number of unique values: 7
+Most frequent value: None
+
+Column: descripcion_ranking_mejor_ult
+Number of unique values: 23
+Most frequent value: PLAN DE PAGO
+
+Column: descripcion_ranking_post_ult
+Number of unique values: 31
+Most frequent value: PLAN DE PAGO
+
+Column: marca_alt_rank
+Number of unique values: 9
+Most frequent value: Cliente compromiso de pago
+
+Column: marca_alt_apli
+Number of unique values: 2
+Most frequent value: NO
+
+Column: valor_cuota_mes
+Number of unique values: 194664
+Most frequent value: 0.0
+
+Column: pago_cuota
+Number of unique values: 62601
+Most frequent value: 0.0
+
+Column: pagos_tanque
+Number of unique values: 2
+Most frequent value: Sin pago
+
+Column: marca_debito_mora
+Number of unique values: 2
+Most frequent value: NO
+
+Column: alternativa_aplicada_agr
+Number of unique values: 8
+Most frequent value: None
+
+Column: marca_agrupada_rgo
+Number of unique values: 6
+Most frequent value: None
+
+Column: marca_pago
+Number of unique values: 4
+Most frequent value: Sin pago
+
+Column: marca_alternativa
+Number of unique values: 3
+Most frequent value: N.A
+
+Column: marca_alternativa_orig
+Number of unique values: 3
+Most frequent value: N.A
+
+Unique values and most frequent values for categorical columns in df_probabilidad_oblig:
+
+Unique values and most frequent values for categorical columns in df_master_customer:
+
+Column:  FABRICACIÓN DE REMOLQUES Y SEMIRREMOLQUES,1160000.0,2023,8,31
+Number of unique values: 59
+Most frequent value:  ANIMALES VIVOS,1160000.0,2023,12,31
+
+Column: nit_enmascarado
+Number of unique values: 152045
+Most frequent value: 477521
+
+Column: cod_tipo_doc
+Number of unique values: 5
+Most frequent value: 1
+
+Column: tipo_cli
+Number of unique values: 2
+Most frequent value: PERSONA NATURAL
+
+Column: ctrl_terc
+Number of unique values: 6
+Most frequent value: CLIENTE
+
+Column: genero_cli
+Number of unique values: 3
+Most frequent value: F
+
+Column: ano_nac_cli
+Number of unique values: 93
+Most frequent value: 1994
+
+Column: edad_cli
+Number of unique values: 94
+Most frequent value: 29
+
+Column: estado_civil
+Number of unique values: 8
+Most frequent value: SOLTERO
+
+Column: tipo_vivienda
+Number of unique values: 5
+Most frequent value: None
+
+Column: num_hijos
+Number of unique values: 24
+Most frequent value: 0
+
+Column: personas_dependientes
+Number of unique values: 27
+Most frequent value: 0
+
+Column: nivel_academico
+Number of unique values: 8
+Most frequent value: None
+
+Column: ocup
+Number of unique values: 15
+Most frequent value: EMPLEADO
+
+Column: act_econom
+Number of unique values: 9
+Most frequent value: ASALARIADO
+
+Column: sector
+Number of unique values: 14
+Most frequent value: PERSONAS
+
+Column: subsector
+Number of unique values: 52
+Most frequent value: PERSONAS NATURALES
+
+Column: declarante
+Number of unique values: 55
+Most frequent value: N
+
+Column: total_ing
+Number of unique values: 76969
+Most frequent value: 0
+
+Column: tot_activos
+Number of unique values: 78870
+Most frequent value: 0
+
+Column: tot_pasivos
+Number of unique values: 8630
+Most frequent value: 0
+
+Column: origen_fondos
+Number of unique values: 1980
+Most frequent value: SALARIO Y DEMAS PAGOS LABORALES
+
+Column: f_vinc
+Number of unique values: 10495
+Most frequent value: OTROS
+
+Column: f_ult_mantenimiento
+Number of unique values: 3753
+Most frequent value: 20230724
+
+Column: canal_actualizacion
+Number of unique values: 487
+Most frequent value: SVP
+
+Column: cli_actualizado
+Number of unique values: 80
+Most frequent value: N
+
+Column: segm
+Number of unique values: 18
+Most frequent value: PERSONAL
+
+Column: subsegm
+Number of unique values: 24
+Most frequent value: MEDIO
+
+Column: nicho
+Number of unique values: 43
+Most frequent value: None
+
+Column: region_of
+Number of unique values: 37
+Most frequent value: ANTIOQUIA
+
+Column: nombre_dpto_dirp
+Number of unique values: 53
+Most frequent value: ANTIOQUIA
+
+Column: egresos_mes
+Number of unique values: 4516
+Most frequent value: 0
+
+Column: tot_patrimonio
+Number of unique values: 78187
+Most frequent value: 0
+
+Column: ciiu
+Number of unique values: 4324
+Most frequent value: ASALARIADOS
+
+Column: smmlv
+Number of unique values: 307
+Most frequent value: 1160000.0
+
+Column: year
+Number of unique values: 68
+Most frequent value: 2023
+
+Column: month
+Number of unique values: 27
+Most frequent value: 8
+
+Column: ingestion_day
+Number of unique values: 14
+Most frequent value: 31
+
+Unique values and most frequent values for categorical columns in df_maestra_cuotas_pagos:
+
+Column: producto
+Number of unique values: 18
+Most frequent value: TARJETA DE CREDITO
+
+Column: aplicativo
+Number of unique values: 7
+Most frequent value: L
+
+Column: segmento
+Number of unique values: 7
+Most frequent value: PERSONAL
+
+Column: marca_pago
+Number of unique values: 8
+Most frequent value: PAGO_MAS
+
+Column: ajustes_banco
+Number of unique values: 3
+Most frequent value: NO
+
+Unique values and most frequent values for categorical columns in df_base_pivot_oot:
+
+Descriptive statistics for numeric columns in df_base_pivot_trtest:
+|       | nit_enmascarado   | num_oblig_orig_enmascarado   | num_oblig_enmascarado   | var_rpta_alt   | min_mora   | max_mora   | dias_mora_fin   | vlr_obligacion   | vlr_vencido   | saldo_capital   | endeudamiento   | cant_alter_posibles   | cant_gestiones   | cant_gestiones_binario   | rpc      | promesas_cumplidas   | cant_promesas_cumplidas_binario   | cant_acuerdo   | cant_acuerdo_binario   | porc_pago_cuota   | pago_mes    | porc_pago_mes   |
+|:------|:------------------|:-----------------------------|:------------------------|:---------------|:-----------|:-----------|:----------------|:-----------------|:--------------|:----------------|:----------------|:----------------------|:-----------------|:-------------------------|:---------|:---------------------|:----------------------------------|:---------------|:-----------------------|:------------------|:------------|:----------------|
+| count | 199999            | 199999                       | 199999                  | 199999         | 199999     | 199999     | 199999          | 199752           | 199999        | 199999          | 199999          | 199999                | 193794           | 199999                   | 199998   | 199999               | 199999                            | 193755         | 199999                 | 199999            | 199999      | 92678           |
+| mean  | 308175            | 557143                       | 525587                  | 0.487692       | 27.1983    | 49.0715    | 37.841          | 1.18599e+07      | 1.0189e+06    | 1.10186e+07     | 3.52773e+07     | 1.80955               | 33.0155          | 0.968975                 | 0.932139 | 0.210721             | 0.0951605                         | 1.10254        | 0.301837               | 0.242581          | 229120      | 0.205315        |
+| std   | 183526            | 300235                       | 303800                  | 0.49985        | 25.8843    | 31.9466    | 35.1883         | 2.52483e+07      | 2.5648e+06    | 2.39146e+07     | 5.65661e+07     | 0.876297              | 26.3916          | 0.173386                 | 0.251507 | 0.690798             | 0.293437                          | 2.13369        | 0.459056               | 0.408983          | 1.80875e+06 | 0.360154        |
+| min   | 2                 | 697                          | 25                      | 0              | 1          | 1          | 0               | 0                | 0             | 0               | 6               | 1                     | 2                | 0                        | 0        | 0                    | 0                                 | 0              | 0                      | 0                 | 0           | 0               |
+| 25%   | 151711            | 299725                       | 266650                  | 0              | 4          | 24         | 0               | 1.53582e+06      | 183482        | 1.3856e+06      | 5.15833e+06     | 1                     | 14               | 1                        | 1        | 0                    | 0                                 | 0              | 0                      | 0                 | 0           | 0               |
+| 50%   | 296696            | 556259                       | 524083                  | 0              | 18         | 44         | 29              | 4.12385e+06      | 442477        | 3.7514e+06      | 1.50465e+07     | 2                     | 28               | 1                        | 1        | 0                    | 0                                 | 0              | 0                      | 0                 | 0           | 0               |
+| 75%   | 465975            | 813692                       | 783336                  | 1              | 46         | 71         | 61              | 1.10004e+07      | 1.01147e+06   | 1.0076e+07      | 4.26546e+07     | 3                     | 44               | 1                        | 1        | 0                    | 0                                 | 2              | 1                      | 0.361222          | 0           | 0.242701        |
+| max   | 634709            | 1.08032e+06                  | 1.08026e+06             | 1              | 90         | 1470       | 534             | 1.22247e+09      | 2.27197e+08   | 1.19794e+09     | 1.52073e+09     | 12                    | 488              | 1                        | 1        | 12                   | 1                                 | 48             | 1                      | 1                 | 3.45e+08    | 1               |
+
+Distribution of the target variable 'var_rpta_alt' in df_base_pivot_trtest:
+|    | var_rpta_alt   |
+|:---|:---------------|
+| 0  | 102461         |
+| 1  | 97538          |
+
+Descriptive statistics of the count of rows per (nit_enmascarado, num_oblig_enmascarado) in df_maestra_cuotas_pagos:
+|       | count   |
+|:------|:--------|
+| count | 151828  |
+| mean  | 1.2053  |
+| std   | 0.46175 |
+| min   | 1       |
+| 25%   | 1       |
+| 50%   | 1       |
+| 75%   | 1       |
+| max   | 6       |
+
+Number of unique values for 'nit_enmascarado' in df_master_customer: 152045
+
+Descriptive statistics of the count of rows per 'nit_enmascarado' in df_master_customer:
+|       | count    |
+|:------|:---------|
+| count | 152045   |
+| mean  | 1.31419  |
+| std   | 0.559699 |
+| min   | 1        |
+| 25%   | 1        |
+| 50%   | 1        |
+| 75%   | 2        |
+| max   | 6        |
+
+Descriptive statistics of the count of rows per (nit_enmascarado, num_oblig_enmascarado) in df_probabilidad_oblig:
+|       | count    |
+|:------|:---------|
+| count | 163094   |
+| mean  | 1.22628  |
+| std   | 0.485395 |
+| min   | 1        |
+| 25%   | 1        |
+| 50%   | 1        |
+| 75%   | 1        |
+| max   | 6        |
+
+Time range in 'fecha_corte' for df_probabilidad_oblig: 2023-01-01 00:00:00 to 2023-12-01 00:00:00
+
+Time range in 'fecha_corte' for df_maestra_cuotas_pagos: 2023-01-31 00:00:00 to 2023-12-31 00:00:00
+
+Time range in 'fecha_var_rpta_alt' for df_base_pivot_trtest: 2023-08-01 00:00:00 to 2023-12-01 00:00:00
+
+Time range in 'fecha_var_rpta_alt' for df_base_pivot_oot: 2024-01-01 00:00:00 to 2024-01-01 00:00:00
